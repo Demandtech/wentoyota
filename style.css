@@ -9,11 +9,38 @@
   font-family: 'Public Sans';
 }
 
+/* section{
+ height: 100vh;
+ display: flex;
+ align-items: center;
+} */
+
 .container {
   max-width: 1440px;
+  min-width: 100%;
   padding: 0 100px;
   margin: 0 auto;
   height: 100%;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #092e4e;
+  font-weight: 800;
+}
+
+.container h4 {
+ 
+}
+
+.container h4 span {
+ color:#dd584e;
+}
+
+.container .header{
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .hero {
@@ -69,73 +96,61 @@
   color: #ffffff;
 }
 
-.roadmap {
-  padding: 50px 0;
-}
 
 .header {
   text-align: center;
   padding: 20px 0;
 }
 
+.roadmap {
+ min-height: 100vh;
+ width: 100vw;
+ display: flex;
+ align-items: center;
+}
+
 .roadmap-wrapper{
  display: grid;
  grid-template-columns: repeat(2, 1fr);
- gap: 20px;
+ gap: 25px;
 }
 
 .roadmap-content {
   background: linear-gradient(180deg, #ffffff 0%, #f0ebe3 100%);
-  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
 }
 
 .roadmap-content ul {
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
-.roadmap-content h3, .roadmap-content h5, .roadmap-content h6 {
- padding-bottom: 10px;
+.roadmap-content ul li{
+ line-height: 1.5;
+ font-size: 18px;
+ color: #000917;
+ font-weight: 500;
 }
 
-.container h2 {
+.roadmap-content h3 {
+  margin-bottom: 10px;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
-.token-wrapper{
- display: flex;
- gap: 10px ;
+.roadmap-content h5 {
+ margin-bottom: 5px;
 }
-.token-card{
- padding: 10px;
- flex: 1;
-}
-.card-header{
- display: flex;
- justify-content: space-between;
+
+.roadmap-content h6{
  margin-bottom: 20px;
 }
 
-
 @media screen and (max-width: 835px){
- .hero{
-  padding: 0 30px;
- }
-  .container{
-   padding: 0 30px;
-  }
+   .container{
+     padding: 0 30px;
+   }
 
-  .roadmap-wrapper{
- display: grid;
- grid-template-columns: repeat(1, 1fr);
- gap: 20px;
-}
-
-  .token-wrapper{
-   flex-direction: column;
-  }
-
-  .hero-content h1{
-   font-size: 45px;
-  }
+   .roadmap-wrapper{
+    grid-template-columns: 1fr ;
+   }
 }
