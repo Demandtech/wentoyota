@@ -12,7 +12,10 @@
 body {
   /* background: hsl(233, 8%, 62%); */
   /* background: #051f3e; */
-  background-color: #7dccf2;
+  background:linear-gradient(180deg,  #051f3e 0%, #7dccf2 100%);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* section{
@@ -59,7 +62,6 @@ body {
 
 .hero {
   color: #ffffff;
-  background-color: #7dccf2;
 }
 
 .btn {
@@ -191,15 +193,13 @@ body {
     font-size: 45px;
   }
 
-  .hero-content{
-   width: 100%;
-   flex-direction: column;
+  .hero-content {
+    width: 100%;
+    flex-direction: column;
   }
 
   .left {
     width: 100%;
-   
-
   }
 
   .roadmap-wrapper {
