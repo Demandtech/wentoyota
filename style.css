@@ -83,6 +83,7 @@
  grid-template-columns: repeat(2, 1fr);
  gap: 20px;
 }
+
 .roadmap-content {
   background: linear-gradient(180deg, #ffffff 0%, #f0ebe3 100%);
   padding: 20px;
@@ -98,6 +99,7 @@
 
 .container h2 {
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .token-wrapper{
@@ -106,6 +108,7 @@
 }
 .token-card{
  padding: 10px;
+ flex: 1;
 }
 .card-header{
  display: flex;
@@ -114,3 +117,25 @@
 }
 
 
+@media screen and (max-width: 835px){
+ .hero{
+  padding: 0 30px;
+ }
+  .container{
+   padding: 0 30px;
+  }
+
+  .roadmap-wrapper{
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ gap: 20px;
+}
+
+  .token-wrapper{
+   flex-direction: column;
+  }
+
+  .hero-content h1{
+   font-size: 45px;
+  }
+}
