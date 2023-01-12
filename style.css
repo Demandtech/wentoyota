@@ -11,7 +11,8 @@
 
 body{
  /* background: hsl(233, 8%, 62%); */
- background: #051f3e;
+ /* background: #051f3e; */
+ background-color: #7dccf2;
 }
 
 /* section{
@@ -38,68 +39,71 @@ body{
 
 .container h4, .about-container h4 {
  /* color: #092e4e; */
- color: #ffffff
+ color: #ffffff;
+ margin-bottom: 30px
 }
 
 .container h4 span, .about-container h4 span {
- color:#dd584e;
+ color: #051f3e;
  margin: 0 5px;
 }
 
 .container .header, .about-container .header{
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
+  
 }
 
 .hero {
-  height: 100vh;
-  padding: 0 100px;
-  position: relative;
-}
-
-.hero-content {
-  height: 100%;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  gap: 10px;
-}
-
-.hero-content h1 {
-  font-size: 75px;
-  line-height: 0.9;
-  margin: 10px 0;
-  color: aliceblue;
-}
-
-.hero-content h6 {
-  font-size: 30px;
-  color: aliceblue;
-}
-
-.hero-content h6 span {
-  color: blue;
-}
-
-.greet {
-  text-transform: capitalize;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.hero-content p {
-  color: #ffffff;
+ color: #ffffff;
+ background-color: #7dccf2;
 }
 
 .btn {
-  margin-top: 50px;
+ margin-top: 40px;
 }
 
-.btn a {
-  text-decoration: none;
-  padding: 15px 25px;
-  background-color: blue;
-  color: #ffffff;
+.btn a{
+ text-decoration: none;
+ background: #ffffff;
+ border-radius: 50px;
+ padding: 15px 25px;
+ display: inline-block;
+ text-align: center;
+ font-weight: 700;
+ color: #051f3e;
+}
+
+.hero-content{
+ display: flex;
+ align-items: center;
+
+}
+.right{
+  width: 50%;
+  
+}
+.left{
+ width: 50%;
+ padding: 40px;
+}
+.name{
+ padding: 20px 0;
+ font-size: 75px;
+ line-height: 1;
+ color: #051f3e;
+}
+
+.right img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+
+.left h6 {
+ margin-bottom: 20px;
+ font-size: 18px;
 }
 
 
@@ -162,13 +166,13 @@ body{
 
 .about-container .header p {
   color: #ffffff;
-  margin-top: 30px;
+  margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.5;
 }
 
 .about-container .header p span {
- color: #dd584e;
+ color: #051f3e;
 }
 
 @media screen and (max-width: 835px){
