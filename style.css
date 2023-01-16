@@ -212,6 +212,7 @@ body {
 
 .token-card {
   flex: 1;
+  color: hsl(100, 100%, 100%)
 }
 
 .card-header {
@@ -236,6 +237,11 @@ footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.copyright, .power{
+  text-align: center;
+  color: hsl(100, 100%, 100%);
 }
 
 @media screen and (max-width: 835px) {
