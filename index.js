@@ -1,3 +1,18 @@
+const hamburger = document.querySelector('.hamburger');
+const navContainer = document.querySelector('.navlist-wrapper');
+const links = document.querySelectorAll('.nav-link')
+
+hamburger.addEventListener('click', ()=>{
+  console.log('clicked')
+  navContainer.classList.toggle('show-nav')
+})
+
+links.forEach(link => {
+  link.addEventListener('click', ()=> {
+    navContainer.classList.remove('show-nav')
+  })
+})
+
 var swiper = new Swiper('.mySwiper', {
   slidesPerView: 3,
   keyboard: {
