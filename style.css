@@ -16,6 +16,10 @@ body {
   background: url(./images/body-bg.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+   transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+  scroll-behavior: smooth;
+
 }
 
 /* section{
@@ -70,7 +74,7 @@ body {
 
 .hero {
   color: #ffffff;
-  padding-top: 50px;
+  padding-top: 150px;
 }
 
 .btn {
